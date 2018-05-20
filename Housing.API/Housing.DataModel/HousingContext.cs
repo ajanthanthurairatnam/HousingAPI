@@ -12,5 +12,13 @@ namespace Housing.DataModel
     {
         public DbSet<CodePrefix> CodePrefix { get; set; }
         public DbSet<SystemUser> SystemUser { get; set; }
+        public DbSet<PropertyType> PropertyType { get; set; }
+        public DbSet<Property> Property { get; set; }
+        public DbSet<Buyer> Buyer { get; set; }
+        public DbSet<Agent> Agent { get; set; }
+        public DbSet<Vendor> Vendor { get; set; }
+        public DbSet<PropertyAgent> PropertyAgent { get; set; }
+        public DbSet<PropertyBuyer> PropertyBuyer { get; set; }
+        public DbSet<PropertyVendor> PropertyVendor { get; set; }
     }
 }

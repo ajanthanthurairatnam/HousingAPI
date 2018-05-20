@@ -42,8 +42,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Classes\Agent.cs" />
+    <Compile Include="Classes\Buyer.cs" />
     <Compile Include="Classes\CodePrefix.cs" />
+    <Compile Include="Classes\Property.cs" />
+    <Compile Include="Classes\PropertyAgent.cs" />
+    <Compile Include="Classes\PropertyBuyer.cs" />
+    <Compile Include="Classes\PropertyType.cs" />
+    <Compile Include="Classes\PropertyVendor.cs" />
+    <Compile Include="Classes\Vendor.cs" />
     <Compile Include="Enums\Gender.cs" />
+    <Compile Include="Enums\UserRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\SystemUser.cs" />
     <Compile Include="Enums\UserType.cs" />

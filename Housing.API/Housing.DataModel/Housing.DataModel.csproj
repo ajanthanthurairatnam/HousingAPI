@@ -60,6 +60,18 @@
     <Compile Include="Migrations\201805200233120_UpdateSystemUser.Designer.cs">
       <DependentUpon>201805200233120_UpdateSystemUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805200608242_UpdateProperty.cs" />
+    <Compile Include="Migrations\201805200608242_UpdateProperty.Designer.cs">
+      <DependentUpon>201805200608242_UpdateProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805200622353_UpdateVendorBuyerAgent.cs" />
+    <Compile Include="Migrations\201805200622353_UpdateVendorBuyerAgent.Designer.cs">
+      <DependentUpon>201805200622353_UpdateVendorBuyerAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805200642151_UpdatePropertyAgentPropertyBuyerPropertyVendor.cs" />
+    <Compile Include="Migrations\201805200642151_UpdatePropertyAgentPropertyBuyerPropertyVendor.Designer.cs">
+      <DependentUpon>201805200642151_UpdatePropertyAgentPropertyBuyerPropertyVendor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -82,6 +94,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805200233120_UpdateSystemUser.resx">
       <DependentUpon>201805200233120_UpdateSystemUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805200608242_UpdateProperty.resx">
+      <DependentUpon>201805200608242_UpdateProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805200622353_UpdateVendorBuyerAgent.resx">
+      <DependentUpon>201805200622353_UpdateVendorBuyerAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805200642151_UpdatePropertyAgentPropertyBuyerPropertyVendor.resx">
+      <DependentUpon>201805200642151_UpdatePropertyAgentPropertyBuyerPropertyVendor.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
