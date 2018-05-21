@@ -72,6 +72,14 @@
     <Compile Include="Migrations\201805200642151_UpdatePropertyAgentPropertyBuyerPropertyVendor.Designer.cs">
       <DependentUpon>201805200642151_UpdatePropertyAgentPropertyBuyerPropertyVendor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805202134495_UpdateProperty1.cs" />
+    <Compile Include="Migrations\201805202134495_UpdateProperty1.Designer.cs">
+      <DependentUpon>201805202134495_UpdateProperty1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805211025537_PropertyInterests.cs" />
+    <Compile Include="Migrations\201805211025537_PropertyInterests.Designer.cs">
+      <DependentUpon>201805211025537_PropertyInterests.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -103,6 +111,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805200642151_UpdatePropertyAgentPropertyBuyerPropertyVendor.resx">
       <DependentUpon>201805200642151_UpdatePropertyAgentPropertyBuyerPropertyVendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805202134495_UpdateProperty1.resx">
+      <DependentUpon>201805202134495_UpdateProperty1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805211025537_PropertyInterests.resx">
+      <DependentUpon>201805211025537_PropertyInterests.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

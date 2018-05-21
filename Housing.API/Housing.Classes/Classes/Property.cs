@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Housing.Classes.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -30,6 +31,10 @@ namespace Housing.Classes
         [Column(TypeName = "VARCHAR")]
         [StringLength(30)]
         public string PropertyLocation { get; set; }
+        public DateTime PropertyAdvertisementStartDate { get; set; }
+        public DateTime PropertyAdvertisementFinishDate { get; set; }
+        public bool IsActive { get; set; }
+        public AdvertisementType AdvertisementType { get; set; }
         public DateTime PropertyCreatedDate { get; set; }
         public int PropertyCreatedBy { get; set; }
         public DateTime PropertyUpdatedDate { get; set; }

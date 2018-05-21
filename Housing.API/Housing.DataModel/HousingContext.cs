@@ -20,5 +20,6 @@ namespace Housing.DataModel
         public DbSet<PropertyAgent> PropertyAgent { get; set; }
         public DbSet<PropertyBuyer> PropertyBuyer { get; set; }
         public DbSet<PropertyVendor> PropertyVendor { get; set; }
+        public DbSet<PropertyInterestedUser> PropertyInterestedUser { get; set; }
     }
 }
