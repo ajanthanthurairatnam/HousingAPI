@@ -80,6 +80,10 @@
     <Compile Include="Migrations\201805211025537_PropertyInterests.Designer.cs">
       <DependentUpon>201805211025537_PropertyInterests.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805211126005_AddMoreFieldsToProperty.cs" />
+    <Compile Include="Migrations\201805211126005_AddMoreFieldsToProperty.Designer.cs">
+      <DependentUpon>201805211126005_AddMoreFieldsToProperty.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -117,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805211025537_PropertyInterests.resx">
       <DependentUpon>201805211025537_PropertyInterests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805211126005_AddMoreFieldsToProperty.resx">
+      <DependentUpon>201805211126005_AddMoreFieldsToProperty.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
