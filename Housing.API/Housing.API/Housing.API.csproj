@@ -253,6 +253,16 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Housing.Classes\Housing.Classes.csproj">
+      <Project>{255d57d5-9fd2-4199-a037-b4fb1553791e}</Project>
+      <Name>Housing.Classes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Housing.DataModel\Housing.DataModel.csproj">
+      <Project>{2409d36c-e466-478b-a11a-b7006eead5c5}</Project>
+      <Name>Housing.DataModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
