@@ -84,6 +84,14 @@
     <Compile Include="Migrations\201805211126005_AddMoreFieldsToProperty.Designer.cs">
       <DependentUpon>201805211126005_AddMoreFieldsToProperty.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805260941352_CreateAudit.cs" />
+    <Compile Include="Migrations\201805260941352_CreateAudit.Designer.cs">
+      <DependentUpon>201805260941352_CreateAudit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805261000353_UpdateCodePrefix1.cs" />
+    <Compile Include="Migrations\201805261000353_UpdateCodePrefix1.Designer.cs">
+      <DependentUpon>201805261000353_UpdateCodePrefix1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -124,6 +132,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805211126005_AddMoreFieldsToProperty.resx">
       <DependentUpon>201805211126005_AddMoreFieldsToProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805260941352_CreateAudit.resx">
+      <DependentUpon>201805260941352_CreateAudit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805261000353_UpdateCodePrefix1.resx">
+      <DependentUpon>201805261000353_UpdateCodePrefix1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

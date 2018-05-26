@@ -43,16 +43,20 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Classes\Agent.cs" />
+    <Compile Include="Classes\AuditRecord.cs" />
     <Compile Include="Classes\Buyer.cs" />
     <Compile Include="Classes\CodePrefix.cs" />
     <Compile Include="Classes\Property.cs" />
     <Compile Include="Classes\PropertyAgent.cs" />
     <Compile Include="Classes\PropertyBuyer.cs" />
+    <Compile Include="Classes\PropertyImage.cs" />
     <Compile Include="Classes\PropertyInterestedUser.cs" />
     <Compile Include="Classes\PropertyType.cs" />
     <Compile Include="Classes\PropertyVendor.cs" />
     <Compile Include="Classes\Vendor.cs" />
     <Compile Include="Enums\AdvertisementType.cs" />
+    <Compile Include="Enums\AuditTable.cs" />
+    <Compile Include="Enums\AuditType.cs" />
     <Compile Include="Enums\Gender.cs" />
     <Compile Include="Enums\UserRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
