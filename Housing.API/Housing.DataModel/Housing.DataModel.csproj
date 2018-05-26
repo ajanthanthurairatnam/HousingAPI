@@ -92,6 +92,10 @@
     <Compile Include="Migrations\201805261000353_UpdateCodePrefix1.Designer.cs">
       <DependentUpon>201805261000353_UpdateCodePrefix1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805262324359_UpdateSystemSettings.cs" />
+    <Compile Include="Migrations\201805262324359_UpdateSystemSettings.Designer.cs">
+      <DependentUpon>201805262324359_UpdateSystemSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -138,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805261000353_UpdateCodePrefix1.resx">
       <DependentUpon>201805261000353_UpdateCodePrefix1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805262324359_UpdateSystemSettings.resx">
+      <DependentUpon>201805262324359_UpdateSystemSettings.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

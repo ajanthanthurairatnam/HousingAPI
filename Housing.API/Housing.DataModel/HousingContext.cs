@@ -22,6 +22,7 @@ namespace Housing.DataModel
         public DbSet<PropertyVendor> PropertyVendor { get; set; }
         public DbSet<PropertyInterestedUser> PropertyInterestedUser { get; set; }
         public DbSet<PropertyImage> PropertyImage { get; set; }
-        public DbSet<AuditRecord> AuditRecord { get; set; }        
+        public DbSet<AuditRecord> AuditRecord { get; set; }
+        public DbSet<SystemSetting> SystemSetting { get; set; }        
     }
 }

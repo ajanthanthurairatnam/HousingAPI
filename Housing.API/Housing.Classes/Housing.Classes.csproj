@@ -53,6 +53,7 @@
     <Compile Include="Classes\PropertyInterestedUser.cs" />
     <Compile Include="Classes\PropertyType.cs" />
     <Compile Include="Classes\PropertyVendor.cs" />
+    <Compile Include="Classes\SystemSettings.cs" />
     <Compile Include="Classes\Vendor.cs" />
     <Compile Include="Enums\AdvertisementType.cs" />
     <Compile Include="Enums\AuditTable.cs" />
