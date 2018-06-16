@@ -24,16 +24,16 @@ namespace Housing.Classes
         public string SystemUserTitle { get; set; }
         [Required]
         [Column(TypeName = "VARCHAR")]
-        [StringLength(30)]
+        [StringLength(50)]
         public string SystemUserFirstName { get; set; }
         [Required]
         [Column(TypeName = "VARCHAR")]
-        [StringLength(30)]
+        [StringLength(50)]
         public string SystemUserLastName { get; set; }       
         public Gender SystemUserGender { get; set; }
         [Required]
         [Column(TypeName = "VARCHAR")]
-        [StringLength(20)]
+        [StringLength(50)]
         public string SystemUserEmail { get; set; }
         [Required]
         [Column(TypeName = "VARCHAR")]

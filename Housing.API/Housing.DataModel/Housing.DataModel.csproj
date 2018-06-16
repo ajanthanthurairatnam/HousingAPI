@@ -96,6 +96,18 @@
     <Compile Include="Migrations\201805262324359_UpdateSystemSettings.Designer.cs">
       <DependentUpon>201805262324359_UpdateSystemSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806160004289_ModifyCodePrefix.cs" />
+    <Compile Include="Migrations\201806160004289_ModifyCodePrefix.Designer.cs">
+      <DependentUpon>201806160004289_ModifyCodePrefix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806160041161_UpdateSystemUser1.cs" />
+    <Compile Include="Migrations\201806160041161_UpdateSystemUser1.Designer.cs">
+      <DependentUpon>201806160041161_UpdateSystemUser1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806160347300_UpdatePropertyDates.cs" />
+    <Compile Include="Migrations\201806160347300_UpdatePropertyDates.Designer.cs">
+      <DependentUpon>201806160347300_UpdatePropertyDates.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -146,6 +158,18 @@
     <EmbeddedResource Include="Migrations\201805262324359_UpdateSystemSettings.resx">
       <DependentUpon>201805262324359_UpdateSystemSettings.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806160004289_ModifyCodePrefix.resx">
+      <DependentUpon>201806160004289_ModifyCodePrefix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806160041161_UpdateSystemUser1.resx">
+      <DependentUpon>201806160041161_UpdateSystemUser1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806160347300_UpdatePropertyDates.resx">
+      <DependentUpon>201806160347300_UpdatePropertyDates.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\DataInsert.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

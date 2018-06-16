@@ -15,6 +15,10 @@ namespace Housing.Classes
         [Required]
         [Column(TypeName = "VARCHAR")]
         [StringLength(10)]
+        public string AuditRecordCodeNextNo { get; set; }
+        [Required]
+        [Column(TypeName = "VARCHAR")]
+        [StringLength(10)]
         public string UserCodeNextNo { get; set; }
         [Required]
         [Column(TypeName = "VARCHAR")]

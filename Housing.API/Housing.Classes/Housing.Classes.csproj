@@ -58,6 +58,7 @@
     <Compile Include="Enums\AdvertisementType.cs" />
     <Compile Include="Enums\AuditTable.cs" />
     <Compile Include="Enums\AuditType.cs" />
+    <Compile Include="Enums\DeviceType.cs" />
     <Compile Include="Enums\Gender.cs" />
     <Compile Include="Enums\UserRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

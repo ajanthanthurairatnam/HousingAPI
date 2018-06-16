@@ -10,7 +10,9 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Housing.Classes;
+using Housing.Classes.Enums;
 using Housing.DataModel;
+
 
 namespace Housing.API.Controllers
 {
@@ -19,9 +21,28 @@ namespace Housing.API.Controllers
         private HousingContext db = new HousingContext();
 
         // GET: api/Properties
-        public IQueryable<Property> GetProperty()
+        public IQueryable<Property> GetProperty(DeviceType DeviceType, int CurrentPage=1)
         {
-            return db.Property;
+            int PageElementSize = 0;
+            if (DeviceType == DeviceType.SmallDevice)
+            {
+                PageElementSize = (int)DeviceTypePage.SmallDevice;
+            }
+            else if (DeviceType == DeviceType.MediumDevice)
+            {
+                PageElementSize = (int)DeviceTypePage.SmallDevice;
+            }
+            else if (DeviceType == DeviceType.LargeDevice )
+            {
+                PageElementSize = (int)DeviceTypePage.LargeDevice;
+            }
+            else if (DeviceType == DeviceType.ExtraLargeDevice)
+            {
+                PageElementSize = (int)DeviceTypePage.ExtraLargeDevice;
+            }
+            int totalPage = (db.Property.Count() + PageElementSize - 1) / PageElementSize;
+            var Properties = db.Property.OrderBy(e=>e.ID).Skip(PageElementSize * (CurrentPage - 1)).Take(PageElementSize);
+            return Properties;
         }
 
         // GET: api/Properties/5
