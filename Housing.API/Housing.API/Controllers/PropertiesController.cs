@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
+using Housing.API.Models;
 using Housing.Classes;
 using Housing.Classes.Enums;
 using Housing.DataModel;
@@ -21,7 +22,7 @@ namespace Housing.API.Controllers
         private HousingContext db = new HousingContext();
 
         // GET: api/Properties
-        public IQueryable<Property> GetProperty(DeviceType DeviceType, int CurrentPage=1)
+        public IQueryable<PropertyWithInformation> GetProperty(DeviceType DeviceType, int CurrentPage=1,string SearchText="")
         {
             int PageElementSize = 0;
             if (DeviceType == DeviceType.SmallDevice)
@@ -41,8 +42,37 @@ namespace Housing.API.Controllers
                 PageElementSize = (int)DeviceTypePage.ExtraLargeDevice;
             }
             int totalPage = (db.Property.Count() + PageElementSize - 1) / PageElementSize;
-            var Properties = db.Property.OrderBy(e=>e.ID).Skip(PageElementSize * (CurrentPage - 1)).Take(PageElementSize);
-            return Properties;
+            var PropertyWithInformations = db.Property
+                .Where((s => (s.PropertyDescription.Contains(SearchText) && SearchText.Trim().Length > 0) || SearchText.Trim().Length == 0))
+                    .OrderBy(e => e.ID).Skip(PageElementSize * (CurrentPage - 1)).Take(PageElementSize).Select(e => new PropertyWithInformation
+                    {
+                        ID = e.ID,
+                        PropertyCode = e.PropertyCode,
+                        PropertyShortDescription = e.PropertyShortDescription,
+                        PropertyTypeID = e.PropertyType.ID,
+                        PropertyTypeDescription = e.PropertyType.PropertyTypeDescription,
+                        PropertyTypeCreatedDate = e.PropertyType.PropertyTypeCreatedDate,
+                        PropertyTypeCreatedBy = e.PropertyType.PropertyTypeCreatedBy,
+                        PropertyTypeUpdatedDate = e.PropertyType.PropertyTypeUpdatedDate,
+                        PropertyTypeUpdatedBy = e.PropertyType.PropertyTypeUpdatedBy,
+                        PropertyDescription = e.PropertyDescription,
+                        PropertyFeatures = e.PropertyFeatures,
+                        PropertyLocation = e.PropertyLocation,
+                        IsActive = e.IsActive,
+                        PropertyPrice = e.PropertyPrice,
+                        Bedrooms = e.Bedrooms,
+                        Restrooms = e.Restrooms,
+                        CarParks = e.CarParks,
+                        AdvertisementTypeID = (int)(e.AdvertisementType),
+                        AdvertisementTypeDescription = e.AdvertisementType.ToString(),
+                        PropertyAdvertisementStartDate = e.PropertyAdvertisementStartDate,
+                        PropertyAdvertisementFinishDate = e.PropertyAdvertisementFinishDate,
+                        PropertyCreatedDate = e.PropertyCreatedDate,
+                        PropertyCreatedBy = e.PropertyCreatedBy,
+                        PropertyUpdatedDate = e.PropertyUpdatedDate,
+                        PropertyUpdatedBy = e.PropertyUpdatedBy
+                    });
+            return PropertyWithInformations;
         }
 
         // GET: api/Properties/5
